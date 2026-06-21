@@ -74,9 +74,15 @@ I verified this with the bug found, wich makes sense since given a number that i
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+I determined the bug was really fixed by adding test cases in test_game_logic.py specifiying the correct assertions and the correct case. I also looked at the test cases to make sure it makes sense. Lastly, I test in the actual app to make sure the specific test case works and the bug works. 
+
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  The one test I ran using pytest was checking if the starting attempt has 8 attemts left, as it should if we start out. Since in normal mode the max number of attempts is 8. The bug originally is that we are given only 7 attempts remaining rather than the full 8 attempts. This test covers this bug. 
+
+
 - Did AI help you design or understand any tests? How?
+The AI helped me design and understand the test that where the initial attempt left shoudl be 8 when we first start the game. It explains that the normal attempt limit is 8 and by initializing the starting attempt to 0 instead of 1. It explains that if someone changed the starting attemtp to 1 (which is the bug) the test would fail with a clear message. 
 
 ---
 
