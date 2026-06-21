@@ -33,13 +33,20 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Click on the developer debug info box to toggle the full box of hints and see the secret number, attempted guesses, current score, difficulty, and the history of guesses. Observe that we start out with 8 attempts left when we boot the game at the very top instructions: Guess a number between 1 and 100. Attempts left: 8."
+2. Click on the enter your guess box and enter a number between 1 and 100. Say you enter 1.
+3. Click on submit guess button. The hint should show "Go Higher!"
+4. Enter a guess that is lower than the secret number but is a single digit number. Also, that number must be higher than the first digit of the secret number if the secret number is more than 1 digit. The hint should show "Go Higher!" 
+
+For example, we can guess 5. The hint should show "Go Higher!" This should show that given a single digit number guess despite if the first digit of the acctual secret number is lower than the single digit number. In this case, the guess 5 should in general be lower than the secret guess 44, which shoudl show the hint "Go Higher!"
+5. Guess a number that is higher than the actual secret number. For example, 50 if the secret number is 44. The given hint should be Go LOWER!
+6. Guess the correct secret number (44) and the result hint should be 🎉
+Correct! Game will end after the correct guess. 
+
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+![alt text](image.png)
+![alt text](image-1.png)
 
 ## 🧪 Test Results
 
