@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Lily Thai\Documents\Codepath Github\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collecting ... collected 7 items
+
+tests/test_game_logic.py::test_initial_attempts_left_is_8 PASSED         [ 14%]
+tests/test_game_logic.py::test_very_large_guess_is_too_high PASSED       [ 28%]
+tests/test_game_logic.py::test_decimal_guess_is_truncated_to_int PASSED  [ 42%]
+tests/test_game_logic.py::test_negative_number_guess_is_too_low PASSED   [ 57%]
+tests/test_game_logic.py::test_winning_guess PASSED                      [ 71%]
+tests/test_game_logic.py::test_guess_too_high PASSED                     [ 85%]
+tests/test_game_logic.py::test_guess_too_low PASSED                      [100%]
+
+============================== 7 passed in 1.10s ==============================
