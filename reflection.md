@@ -90,11 +90,21 @@ The AI helped me design and understand the test that where the initial attempt l
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit is a Python library that lets us build interactive web apps. Specifically in this project, Streamlit reruns the entire app script everytime the user clicks a button or types in a guess. The session state is keeping track of the values in between each rerun. 
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+One habit is to make commits with meaningful messages pretty often to keep work updated and keep track of what code was added and for what reason. Another is to create test cases as you go and update or change the code to ensure that the code is still working as expected. A good prompting strategy is to be specific in what you ask the AI to do to avoid confusion, but you still have to make sure to double check what changes the AI is adding or removing to the code. 
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+One thing I would do differently next time I work with AI on a coding task is to ask the AI to explain specific parts of the code to ensure that I understand what it is editing or the current code itself to see if the new changes added make sense and is thoroughly tested. 
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One thing I learned from this project is that the AI is not always correct so you must double check to see what it is doing since it may misunderstand what you want it to actually do. 
