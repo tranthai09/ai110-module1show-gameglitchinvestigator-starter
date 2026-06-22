@@ -11,14 +11,21 @@
 **What task did you give the agent?**
 
 <!-- Describe the goal you asked the agent to accomplish -->
+1. Generate a test case for negative numbers as the guesses 
+2. Generate a test case for decimal numbers
+3. Generate a test case for very large values
+
+Each of these test cases were chosen as they were specific edge cases that didn't work when playing the initial game. The game wouldn't show the correct hints for negative numbers, decimal numbers, or very large values greater than 100.
 
 **What did the agent do?**
 
 <!-- List the steps the agent took (files edited, commands run, etc.) -->
+The AI created 3 test cases for each task given by first thinking and understanding the given task by looking at parse_guess in app.py:15-30. Then it read the file test_game_logic.py and edited it to add the imports for each task and then it thought and edited the same file to add the test cases for each task. Claude then explains the test cases as well as what it did and which lines. 
 
 **What did you have to verify or fix manually?**
 
 <!-- Describe anything the agent got wrong or that required human review -->
+If it didn't specify where to add the test cases, I had to specify the test_game_logic.py file.
 
 ---
 

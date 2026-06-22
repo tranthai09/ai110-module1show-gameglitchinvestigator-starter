@@ -26,8 +26,14 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The game's purpose is to let the user guess the correct secret number. With every guess, there will be hints given, if the user keeps the hint box checked, indicating whether the guess should be higher or lower. You are given a specific number of attempts based on which diffiuclty you play in.
+
 - [ ] Detail which bugs you found.
+One bug found is that we are not given 8 attempts starting out the game, the message says there are 7 attempts left even though we should have 8. Another bug found is that the hint is incorrect in multiple ways. One specific way is that when the guess is a single digit number and the secret number is a double or triple digit number, and the first digit of the secret number is lower than the single digit guess, the wrong hint or result is given back. For example, if the  secret number is 88, and our guess is 9, the hint given back will be Go Lower rather than Go Higher. This is becuase 9 is greater than the first digit of 88, which is 8. Another bug found is the starting attempt number is 7, which is incorrect and should be 8 for normal difficulty.
+
 - [ ] Explain what fixes you applied.
+One fix applied is that the st.session_state.attempts needs to be initialized to 0 if "attempts" not in st.session_state, which should be the case if we start out with it. 
+
 
 ## 📸 Demo Walkthrough
 
@@ -54,6 +60,19 @@ Correct! Game will end after the correct guess.
 # Paste your pytest output here, e.g.:
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
+
+
+
+============================================================================================================ test session starts ============================================================================================================
+platform win32 -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0
+rootdir: C:\Users\Lily Thai\Documents\Codepath Github\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collected 7 items                                                                                                                                                                                                                            
+
+tests\test_game_logic.py .......                                                                                                                                                                                                       [100%]
+
+============================================================================================================= 7 passed in 1.13s
+
 ```
 
 ## 🚀 Stretch Features
